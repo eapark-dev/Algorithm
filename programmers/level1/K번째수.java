@@ -22,14 +22,14 @@ class Solution3 {
             
             if(tmp[0] == tmp[1]) {
                 answer[i] = array[tmp[0]-1];
+            }else{  
+                for(int j= 0; j<=tmp[1]-tmp[0]; j++) {
+                    num = tmp[0] + j; 
+                    tmp2[j] = array[num-1];
+                }
+                Arrays.sort(tmp2);
+                answer[i] = tmp2[tmp[2]-1];
             }
-                
-            for(int j= 0; j<=tmp[1]-tmp[0]; j++) {
-                num = tmp[0] + j; 
-                tmp2[j] = array[num-1];
-            }
-            Arrays.sort(tmp2);
-            answer[i] = tmp2[tmp[2]-1];
         }
     
        
