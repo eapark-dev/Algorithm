@@ -2,8 +2,8 @@ function solution(new_id) {
     var answer = '';
     
     answer = new_id.toLowerCase(); //소문자 치환
-    answer = answer.replace(/[^\w\d\-\_\.]/g, '')               //done
-                       .replace(/\.{2,}/g, '.')                     //done
+    answer = answer.replace(/[^\w\d\-\_\.]/g, '')               
+                       .replace(/\.{2,}/g, '.')                     
                        .replace(/^\.|\.$/g, '');      
    
     for (var i = answer.length - 1; i >= 0; i--) {
