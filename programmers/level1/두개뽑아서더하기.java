@@ -4,7 +4,6 @@ public class 두개뽑아서더하기 {
 
     class Solution {
         public int[] solution(int[] numbers) {
-            Arrays.sort(numbers);
             ArrayList<Integer> list = new ArrayList<Integer>();
             ArrayList<Integer> list2 = new ArrayList<Integer>();
             int tmp = 0;
