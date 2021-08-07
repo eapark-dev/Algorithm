@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class plusNum {
     public int solution(int n) {
         int answer = 0;
