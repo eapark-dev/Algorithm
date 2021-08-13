@@ -11,7 +11,7 @@ public class findDecimal {
                     } 
                 }
                 
-                if(flag){
+                if(flag){ //flag가 true면 answer 증가
                     answer++;
                 }
             }
