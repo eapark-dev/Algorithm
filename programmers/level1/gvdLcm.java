@@ -17,7 +17,6 @@ public class gvdLcm {
             
             
             return answer;
-            
         }
         
     }
