@@ -1,19 +1,20 @@
+import java.util.HashSet;
 public class phoneNumberList {
     class Solution {
         public boolean solution(String[] phone_book) {
-            boolean answer = true;
+            //HashSet 사용 
+            HashSet<String> set = new HashSet<String>();
+            //set에 phone_book 값을 넣음
             for(int i=0; i<phone_book.length; i++){
-                for(int j=i+1; j<phone_book.length; j++){
-                    //startsWith 함수 사용하여 첫번째 값이 접두어인지 확인
-                    if(phone_book[i].startsWith(phone_book[j])){
-                        answer = false;
-                    }
-                    if(phone_book[j].startsWith(phone_book[i])){
-                        answer = false;
-                    }
-                }
+                set.add(phone_book[i]);
             }
-            return answer;
+            
+            //haspSet에 값이 있는 지 contains 함수 이용하여 비교하여 있으면 false 아니면 true
+            for (String key : set)
+                for (int i = 1; i <= key.length() - 1; i++) {
+                    if (set.contains(key.substring(0, i))) return false;
+                }
+           return true;
         }
     }
 }
