@@ -13,7 +13,7 @@ public class jadenCase {
                 char[] tmp = sArr[i].toCharArray();
                 for (int j = 0; j < tmp.length; j++) {
                     int num = Character.getNumericValue(tmp[j]);
-                    if (j == 0 && num > 10) {
+                    if (j == 0 && num >= 10) {
                         answer += String.valueOf(tmp[j]).toUpperCase();
                     } else {
                         answer += String.valueOf(tmp[j]).toLowerCase();
