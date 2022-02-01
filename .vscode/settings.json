@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "programmers/level2",
         "programmers/level1",
-        "programmers/level2"
+        "baekjoon"
     ]
 }
