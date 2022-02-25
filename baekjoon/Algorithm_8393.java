@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Algorithm_8393 {
-    //백준 알고리즘 : 알람시계
+    //백준 알고리즘 : 합
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt(); 
