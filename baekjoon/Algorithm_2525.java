@@ -14,11 +14,9 @@ public class Algorithm_2525 {
             //총 값이 60보다 클 경우 60분씩 계속 차감 
             while(sumMin >= 60){
                 sumMin -= 60;
-                hour++;
+                hour += 1;
                 //24를 넘어가면 0으로 초기화
-                if(hour >= 24) {
-                    hour=0;
-                }
+                hour = (hour >= 24) ? 0 : hour ;
             }
         }
 
