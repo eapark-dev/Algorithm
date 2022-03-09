@@ -7,7 +7,7 @@ public class Algorithm_10926 {
 
 			id = sc.next();
 
-			System.out.println(id);
+			System.out.println(id+"??!");
 		}
 	}
 }
