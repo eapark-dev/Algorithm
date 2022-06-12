@@ -17,7 +17,7 @@ public class Algorithm_3052 {
             };
         };
 
-        in close;
+        sc.close();
         System.out.println(arrList.size());
     }
 }
