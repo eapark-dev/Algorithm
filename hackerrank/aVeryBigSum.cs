@@ -9,24 +9,25 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
-using System.Text; 
+using System.Text;
 using System;
 
-class simpleArraySum {
+class aVeryBigSum
+{
+
     /*
-     * Complete the 'simpleArraySum' function below.
+     * Complete the 'aVeryBigSum' function below.
      *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY ar as parameter.
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts LONG_INTEGER_ARRAY ar as parameter.
      */
 
-    public static int simpleArray(List<int> ar)
+    public static long aVeryBig(List<long> ar)
     {
-        int sum = 0;
+        long sum = 0;
         foreach(var item in ar){
-            sum += item;          
+             sum += item;
         }
-        
         return sum;
     }
 
@@ -37,13 +38,14 @@ class simpleArraySum {
 
         int arCount = Convert.ToInt32(Console.ReadLine().Trim());
 
-        List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
+        List<long> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt64(arTemp)).ToList();
 
-        int result = simpleArray(ar);
+        long result = aVeryBig(ar);
 
         textWriter.WriteLine(result);
 
         textWriter.Flush();
         textWriter.Close();
     }
+
 }
