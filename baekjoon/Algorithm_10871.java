@@ -6,9 +6,9 @@ public class Algorithm_10871 {
         int len = sc.nextInt();
         int num = sc.nextInt();
         String str = "";
-        for(int i=1; i<=len; i++){
+        for (int i = 1; i <= len; i++) {
             int a = sc.nextInt();
-            if(a < num){
+            if (a < num) {
                 str += a + " ";
             }
         }
